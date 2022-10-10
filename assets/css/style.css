@@ -53,6 +53,19 @@ body{
   'footer'
 }
 
+/* ---------- MODO DARK ---------- */
+body.dark{
+  --first-color: hsl(182, 53%, 74%);
+  --button-color: hsl(246, 16%, 12%);
+  --button-color-alt: hsl(0, 0%, 28%);
+  --card-color: hsla(246, 16%, 5%, .5);
+  --title-color: hsl(0, 0%, 95%);
+  --text-color: hsl(0, 0%, 75%);
+  --body-color: hsl(249, 19%, 14%);
+  --container-color: hsl(246, 16%, 12%);
+  --border-color: hsl(0, 0%, 20%);
+}
+
 .nav{
   /*background-color: black; FONDO PRINCIPAL CONTENEDOR NAV-1*/
   grid-area: nav;
@@ -203,7 +216,7 @@ body{
   right: 4px;
   border: 0;
   background-color: var(--button-color);
-  color: var(--body-color);
+  color: white;
   font-weight: bold;
   font-size: 16px;
 }
@@ -517,7 +530,7 @@ body{
     right: 4px;
     border: 0;
     background-color: var(--button-color);
-    color: var(--body-color);
+    color: white;
     font-weight: bold;
     font-size: 16px;
   }
@@ -630,7 +643,7 @@ body{
       right: 4px;
       border: 0;
       background-color: var(--button-color);
-      color: var(--body-color);
+      color: white;
       font-weight: bold;
       font-size: 16px;
     }

@@ -1,3 +1,36 @@
+
+/* INICIO DEL DomContentLoader */
+document.addEventListener("DOMContentLoaded", () => {
+  
+  
+/* ----------INICIO MODO DARK BY IMMER ---------- */
+
+      /* Inicio Variables */
+      const themeIcon = document.getElementById("btn-moon-nav")
+      const body = document.querySelector("body")
+      /* Fin Variables */
+
+      themeIcon.addEventListener("click", () => {
+        body.classList.toggle("dark")
+
+        if (themeIcon.classList.contains("bx-moon")){
+            themeIcon.classList.replace("bx-moon", "bx-sun")
+        } else{
+          themeIcon.classList.replace("bx-sun", "bx-moon")
+        }
+
+      })
+      
+/* ----------INICIO MODO DARK BY IMMER ---------- */
+  
+  
+    })
+/* FIN DEL DomContentLoader */
+
+
+/* ---------- INICIO DE LOS PRODUCTOS ----------*/
+
+
 const items = [
     {
       id: 1,
@@ -24,3 +57,7 @@ const items = [
       quantity: 20
     }
   ]
+
+
+
+ 
