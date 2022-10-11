@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
     })
 /* FIN DEL DomContentLoader */
 
-/* ----------INICIO CODE BY IMMER ---------- */
+/* ----------FIN CODE BY IMMER ---------- */
 
 
 /*Array de items*/
@@ -88,5 +88,22 @@ const listarProductos = () =>{
 
 listarProductos()
 /* FIN LISTADO DE PRODUCTOS*/
+
+
+/* CARRITO*/
+
+const cartIcon = document.getElementById('cart-icon')
+const carritoMenu = document.getElementById('carrito')
+const cierraCarrito = document.getElementById('close')
+
+/*Mostrar carrito*/
+
+cartIcon.addEventListener('click', () => {
+  carritoMenu.classList.remove('hidden');
+  cierraCarrito.addEventListener('click', () => {
+    carritoMenu.classList.add('hidden')
+  })
+  
+})
 
 /* ---------- FIN CODE JS BY LAUTHER ---------- */

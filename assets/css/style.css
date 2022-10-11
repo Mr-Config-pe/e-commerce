@@ -150,6 +150,10 @@ body.dark{
     gap: 0.8rem;
   }
 
+  #btn-moon-nav{
+    cursor: pointer;
+  }
+
   #bt-grid-nav{
     cursor: pointer;
   }
@@ -674,14 +678,9 @@ body.dark{
     --border-color: hsl(0, 0%, 20%);
 */
   
- /*hola mundo, my name is lauther, los comentarios se pone entre / y * */ 
+/*ESTILADO PARA ICONO CARRITO*/
+#cart-icon, #close{
+  cursor: pointer;
+}
 
-
-
-
-
-
-
-
-
- /*Remplazando el codigo linea 600, porque tenia un error rojo que no salia*/
+/*FIN ESTILADO PARA ICONO CARRITO*/
