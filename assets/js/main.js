@@ -1,7 +1,7 @@
 
 /* ----------INICIO CODE BY IMMER ---------- */
 
-/* INICIO DEL DomContentLoader */
+/* INICIO DEL DomContentLoader - NO ELIMINAR!! */
 document.addEventListener("DOMContentLoaded", () => {
   
   
@@ -23,11 +23,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
       })
       
-
-  
-  
-    })
-/* FIN DEL DomContentLoader */
 
 /* ----------FIN CODE BY IMMER ---------- */
 
@@ -107,3 +102,13 @@ cartIcon.addEventListener('click', () => {
 })
 
 /* ---------- FIN CODE JS BY LAUTHER ---------- */
+
+
+
+
+
+
+
+
+
+}) /* FIN DEL DomContentLoader - NO ELIMINAR!!!*/
