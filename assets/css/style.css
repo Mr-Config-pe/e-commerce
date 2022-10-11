@@ -106,7 +106,7 @@ body.dark{
 
 .contenedor-polo-nav{ /*Contenedor de la imagen*/
   background-color: var(--first-color); /*Fondo rojo*/
-  width: 274px;
+  width: 286px;
   position: relative;
   top: -60px;
 }
@@ -130,7 +130,7 @@ body.dark{
   color: var(--first-color);
   align-items: center;
   z-index: 1;
-  padding: 0px 24px;
+  padding: 0px 36px;
 }
 
   .bar-nav1{
@@ -161,9 +161,8 @@ body.dark{
 /* ---------- HEADER MOVIL GRID ----------*/
 
 .header{
-  padding-left: 24px;
-  padding-right: 36px;
-  padding-top: 50px;
+  padding: 0px 36px;
+  padding-top: 80px;
   display: grid;
   grid-template-areas:
   'header1'
@@ -234,11 +233,10 @@ body.dark{
   margin: 3rem 0;
 }
 .btn{
-  background-color: blue;
   width: 7rem;
   height: 2.5rem;
   border: none;
-  background-color: var(--body-color);
+  background-color: var(--container-color);
 }
 .btn h2{
   font-size: 16px;
@@ -316,7 +314,7 @@ body.dark{
 }
 
 .footer{
-  /*background-color: var(--card-color);*/ /*DESACTIVADO TEMPORAL PARA VER EL FONDO DEL FOOTER ORIGINAL - BY MR-CONFIG*/
+  background-color: var(--card-color);  /*Ya lo activé*/
   display: flex;
   flex-direction: row;
   justify-content: start;
@@ -325,7 +323,7 @@ body.dark{
 }
 
 .contenedor-footer{
-  width: 20rem;
+  width: 100%; /* CAMBIE A 100% PARA QUE EL RESPONSIVE SEA MEJOR - BY IMMER*/
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -431,7 +429,7 @@ body.dark{
 
   /* ----------- MEDIA QUERY - OTRAS MEDIDAS-----------*/
 
-  @media (min-width: 671px){ 
+  @media (min-width: 710px){ 
 
   .header{ /*DESAPARECIENDO PRIMER HEADER*/
       display: none;
@@ -449,7 +447,7 @@ body.dark{
   /* ---------- BARRA DE NAVEGACION GRID ----------*/
   .nav {
       margin-bottom: -150px;
-      padding: 0px 40px;
+      padding: 0px 60px;
       display: grid;
       grid-template-areas:
       'bar-nav bar-nav'
@@ -576,7 +574,7 @@ body.dark{
   /* ---------- BARRA DE NAVEGACION Y FOTO ---------- */
 
     .nav{
-    padding: 0px 80px;
+    padding: 0px 100px;
     margin-bottom: 150px;
     }
 

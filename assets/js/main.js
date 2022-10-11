@@ -1,35 +1,38 @@
 
+/* ----------INICIO CODE BY IMMER ---------- */
+
 /* INICIO DEL DomContentLoader */
 document.addEventListener("DOMContentLoaded", () => {
   
   
-/* ----------INICIO MODO DARK BY IMMER ---------- */
 
-      /* Inicio Variables */
-      const themeIcon = document.getElementById("btn-moon-nav")
-      const body = document.querySelector("body")
-      /* Fin Variables */
 
-      themeIcon.addEventListener("click", () => {
-        body.classList.toggle("dark")
+    /* Inicio Variables */
+    const themeIcon = document.getElementById("btn-moon-nav")
+    const body = document.querySelector("body")
+    /* Fin Variables */
 
-        if (themeIcon.classList.contains("bx-moon")){
-            themeIcon.classList.replace("bx-moon", "bx-sun")
-        } else{
-          themeIcon.classList.replace("bx-sun", "bx-moon")
-        }
+    themeIcon.addEventListener("click", () => {
+    body.classList.toggle("dark")
+
+    if (themeIcon.classList.contains("bx-moon")){
+        themeIcon.classList.replace("bx-moon", "bx-sun")
+    } else{
+        themeIcon.classList.replace("bx-sun", "bx-moon")
+      }
 
       })
       
-/* ----------INICIO MODO DARK BY IMMER ---------- */
+
   
   
     })
 /* FIN DEL DomContentLoader */
 
+/* ----------INICIO CODE BY IMMER ---------- */
 
-/* ---------- INICIO DE LOS PRODUCTOS ----------*/
 
+/*Array de items*/
 
 const items = [
     {
@@ -59,5 +62,31 @@ const items = [
   ]
 
 
+/* ---------- INICIO CODE JS BY LAUTHER ---------- */
 
- 
+/*LISTADO DE PRODUCTOS*/
+const contenedorProductos = document.getElementById('contenedor-productos')
+
+const listarProductos = () =>{
+  let productos = ``
+  items.forEach(producto => {
+    productos += 
+    `<div class="tarjeta-producto">
+      <img src="${producto.image}" class="img-producto">
+      <div class="contenedor-detalle">
+        <button class="btn-agrega" id="btn-agrega">+</button>
+        <div class="precio-stock">
+          <h2>$${producto.price}.00</h2>
+          <p>Stock: ${producto.quantity}</p>
+        </div>
+        <p>${producto.name}</p>
+      </div>
+    </div>`
+  })
+  contenedorProductos.innerHTML = productos
+}
+
+listarProductos()
+/* FIN LISTADO DE PRODUCTOS*/
+
+/* ---------- FIN CODE JS BY LAUTHER ---------- */
