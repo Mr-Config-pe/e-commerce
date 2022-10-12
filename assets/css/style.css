@@ -203,6 +203,24 @@ body.dark{
   .hide-menuright{
     display: block;
   }
+
+  .container-barnav1{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .letra-a{
+    width: 48px;
+    height: 48px;
+    fill: var(--first-color);
+  }
+
+  .name-logo{
+    font-weight: bold;
+    color: var(--title-color);
+  }
   
 /* ----- FIN CODE MENU-RIGHT -----*/
 
