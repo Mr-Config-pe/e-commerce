@@ -1,39 +1,11 @@
 
-
-/* INICIO DEL DomContentLoader - NO ELIMINAR!! */
-
-
-document.addEventListener("DOMContentLoaded", () => {
-  
 /* ----------INICIO CODE BY IMMER ---------- */
 
-/* ----- INICIO MENU RIGHT -----*/
-
-const bagIcon = document.getElementById("bt-grid-nav")
-const menuRight = document.getElementById("menu-navright")
-
-bagIcon.addEventListener("click", () => {
-
-  menuRight.classList.toggle("hide-menuright")
-})
-
-/* ----- FIN MENU RIGHT -----*/
-
-/*----- INICIO INTRO ACADEMLO -----*/
-
-const loader = document.getElementById("loader")
-
-const loadpage = () => {
-    setTimeout(()=> {
-        loader.classList.add("hide")
-    }, 3000);
-}
-
-document.addEventListener("DomContentLoader", loadpage())
-
-/*----- FIN INTRO ACADEMLO -----*/
-
-/* ----- INICIO CODE MODO DARK ----- */
+/* INICIO DEL DomContentLoader - NO ELIMINAR!! */
+document.addEventListener("DOMContentLoaded", () => {
+  
+  
+/* ----- INICIO MODO DARK ----- */
 
     /* Inicio Variables */
     const themeIcon = document.getElementById("btn-moon-nav")
@@ -51,7 +23,7 @@ document.addEventListener("DomContentLoader", loadpage())
 
       })
 
-/* ----- FIN CODE MODO DARK ----- */
+/* ----- FIN MODO DARK ----- */
 
 /* ----- INICIO FONDO BAR-NAV----- */
 
