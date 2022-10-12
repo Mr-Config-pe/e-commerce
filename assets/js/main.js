@@ -2,9 +2,23 @@
 /* ----------INICIO CODE BY IMMER ---------- */
 
 /* INICIO DEL DomContentLoader - NO ELIMINAR!! */
+
 document.addEventListener("DOMContentLoaded", () => {
   
-  
+/*----- INICIO INTRO ACADEMLO -----*/
+
+const loader = document.getElementById("loader")
+
+const loadpage = () => {
+    setTimeout(()=> {
+        loader.classList.add("hide")
+    }, 3000);
+}
+
+document.addEventListener("DomContentLoader", loadpage())
+
+/*----- FIN INTRO ACADEMLO -----*/
+
 /* ----- INICIO MODO DARK ----- */
 
     /* Inicio Variables */

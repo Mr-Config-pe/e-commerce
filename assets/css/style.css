@@ -93,8 +93,52 @@ body.dark{
   display: none;
 }
 
+/*----- INICIO INTRO ACADEMLO -----*/
 
-/* ---------- ESTILADO BARRA NAVEGADOR ----------*/
+.loader-intro{
+  background-color: var(--body-color);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top:0;
+  left: 0;
+  display: grid;
+  justify-content:center;
+  align-items: center;
+  z-index: 100;
+  }
+  
+  .loader--img{
+  width: 100px;
+  fill:var(--first-color);
+  position: relative;
+  top:0;
+  animation: load 2s infinite;
+  }
+  
+  @keyframes load{
+  
+      0%{
+          top: 0;
+      }
+      
+      50%{
+          top: -30px;
+      }
+  
+      100%{
+          top:0;
+      }
+      
+  }
+  
+  .loader-intro.hide{ /*Significa cuando loader tenga la clase hide*/
+  display: none;
+  }
+  
+/*----- FIN INTRO ACADEMLO -----*/
+
+/* ---------- INICIO BARRA NAVEGADOR ----------*/
 
 .contenedor-nav{
   grid-area: contenedor-nav;
@@ -126,7 +170,7 @@ body.dark{
   position: fixed;
   top: 0;
   left: 0;
-  height: 60px;
+  height: 80px;
   display: grid;
   grid-template-areas: 
   'bar-nav1 bar-nav2';
