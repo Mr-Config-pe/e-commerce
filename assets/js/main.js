@@ -1,10 +1,25 @@
 
-/* ----------INICIO CODE BY IMMER ---------- */
 
 /* INICIO DEL DomContentLoader - NO ELIMINAR!! */
 
+/* ----- INICIO MENU RIGHT -----*/
+
+const bagIcon = document.getElementById("bt-grid-nav")
+const menuRight = document.getElementById("menu-navright")
+
+bagIcon.addEventListener("click", () => {
+
+  menuRight.classList.toggle("hide-menuright")
+})
+
+/* ----- FIN MENU RIGHT -----*/
+
 document.addEventListener("DOMContentLoaded", () => {
   
+/* ----------INICIO CODE BY IMMER ---------- */
+
+
+
 /*----- INICIO INTRO ACADEMLO -----*/
 
 const loader = document.getElementById("loader")
@@ -19,7 +34,7 @@ document.addEventListener("DomContentLoader", loadpage())
 
 /*----- FIN INTRO ACADEMLO -----*/
 
-/* ----- INICIO MODO DARK ----- */
+/* ----- INICIO CODE MODO DARK ----- */
 
     /* Inicio Variables */
     const themeIcon = document.getElementById("btn-moon-nav")
@@ -37,7 +52,7 @@ document.addEventListener("DomContentLoader", loadpage())
 
       })
 
-/* ----- FIN MODO DARK ----- */
+/* ----- FIN CODE MODO DARK ----- */
 
 /* ----- INICIO FONDO BAR-NAV----- */
 
