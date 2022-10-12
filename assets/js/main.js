@@ -2,6 +2,11 @@
 
 /* INICIO DEL DomContentLoader - NO ELIMINAR!! */
 
+
+document.addEventListener("DOMContentLoaded", () => {
+  
+/* ----------INICIO CODE BY IMMER ---------- */
+
 /* ----- INICIO MENU RIGHT -----*/
 
 const bagIcon = document.getElementById("bt-grid-nav")
@@ -13,12 +18,6 @@ bagIcon.addEventListener("click", () => {
 })
 
 /* ----- FIN MENU RIGHT -----*/
-
-document.addEventListener("DOMContentLoaded", () => {
-  
-/* ----------INICIO CODE BY IMMER ---------- */
-
-
 
 /*----- INICIO INTRO ACADEMLO -----*/
 
