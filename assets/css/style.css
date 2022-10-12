@@ -198,7 +198,6 @@ body.dark{
     grid-area: bar-nav2;
     text-align: right;
     color: var(--button-color);
-    font-size: 22px;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -217,6 +216,26 @@ body.dark{
 
 .nav-header{
     grid-area: nav-header;
+}
+
+.contenedor-shopingbag{
+  position: relative;
+}
+.bag-counter{
+  background-color: black;
+  width: 1rem;
+  height: 1rem;
+  display: flex;
+  padding: 0.25rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 10px;
+  position: absolute;
+  bottom: -1px;
+  right: -5px;
+  
 }
 
 /* ---------- HEADER MOVIL GRID ----------*/
