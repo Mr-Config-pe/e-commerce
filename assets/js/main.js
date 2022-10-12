@@ -4,8 +4,38 @@
 /* INICIO DEL DomContentLoader - NO ELIMINAR!! */
 document.addEventListener("DOMContentLoaded", () => {
   
+/* ----------INICIO CODE BY IMMER ---------- */
+
+/* ----- INICIO MENU RIGHT -----*/
+
+const bagIcon = document.getElementById("bt-grid-nav")
+const menuRight = document.getElementById("menu-navright")
+const containerRight = document.getElementById("container-navright")
+
+bagIcon.addEventListener("click", () => {
+
+  menuRight.classList.toggle("hide-menuright")
+  containerRight.classList.toggle("hide-menuright")
   
-/* ----- INICIO MODO DARK ----- */
+})
+
+/* ----- FIN MENU RIGHT -----*/
+
+/*----- INICIO INTRO ACADEMLO -----*/
+
+const loader = document.getElementById("loader")
+
+const loadpage = () => {
+    setTimeout(()=> {
+        loader.classList.add("hide")
+    }, 3000);
+}
+
+document.addEventListener("DomContentLoader", loadpage())
+
+/*----- FIN INTRO ACADEMLO -----*/
+
+/* ----- INICIO CODE MODO DARK ----- */
 
     /* Inicio Variables */
     const themeIcon = document.getElementById("btn-moon-nav")
@@ -23,7 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       })
 
-/* ----- FIN MODO DARK ----- */
+/* ----- FIN CODE MODO DARK ----- */
 
 /* ----- INICIO FONDO BAR-NAV----- */
 
@@ -99,8 +129,8 @@ listarProductos(items)
 
 
 /* ---------- ABRE Y CIERRA CARRITO LAUTHER ----------*/
-const cartIcon = document.getElementById('cart-icon')     
-const carritoMenu = document.getElementById('carrito')   
+const cartIcon = document.getElementById('cart-icon')
+const carritoMenu = document.getElementById('carrito')
 const cierraCarrito = document.getElementById('close')
 
 cartIcon.addEventListener('click', () => {
@@ -194,9 +224,9 @@ function actualizaArrayPrincipal(index){
 /* ---------- FUNCIONALIDADES EN EL CARRITO (SUMA/RESTA/TOTAL/ACTUALIZA) LAUTHER 4.0 ---------- */
 // Fragmento HTML que agrega items al HTML del contenedor del carrito
 let carritoVacio = `
-  <img src="./assets/images/empty-cart.png" alt="" class="img-empty-cart">
-  <h2>Your cart is empty</h2>
-  <p>Your can add items to your car by clicking on the '+' button on the product page.</p>`
+<img src="./assets/images/empty-cart.png" alt="" class="img-empty-cart">
+<h2>Your cart is empty</h2>
+<p>Your can add items to your car by clicking on the '+' button on the product page.</p>`
 
 // Listar en el contenedor carrito
 const contenedorItemCarrito = document.querySelector('.carrito-1')
@@ -223,7 +253,7 @@ function listaItemsCarrito(){
               <p>Subtotal: $${element.cantidad * element.price}.00</p>
             </div>
             <div class="agrega-resta">
-              <i class='bx bx-minus minus-icon' name="${element.id}"></i>   
+              <i class='bx bx-minus minus-icon' name="${element.id}"></i>
               <p> ${element.cantidad} units</p>
               <i class='bx bx-plus plus-icon' name="${element.id}"></i>
               <i class='bx bx-trash-alt trash-icon" '></i>
