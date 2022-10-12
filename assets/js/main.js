@@ -11,10 +11,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
 const bagIcon = document.getElementById("bt-grid-nav")
 const menuRight = document.getElementById("menu-navright")
+const containerRight = document.getElementById("container-navright")
 
 bagIcon.addEventListener("click", () => {
 
   menuRight.classList.toggle("hide-menuright")
+  containerRight.classList.toggle("hide-menuright")
+  
 })
 
 /* ----- FIN MENU RIGHT -----*/
