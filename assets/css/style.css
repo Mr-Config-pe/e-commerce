@@ -420,12 +420,19 @@ body.dark{
   width: 7rem;
   height: 2.5rem;
   border: none;
-  background-color: var(--container-color);
+  background-color: var(--body-color); /*Cambie para que se asemeje mejor al fondo del body - By Immer*/
 }
 .btn h2{
   font-size: 16px;
-  color: var(--title-color);
+  color: var(--text-color); /*Cambie de color para que se asemeje mas a la imagen - By Immer*/
+  cursor: pointer; /*Agreue Cursor - By Immer*/
 }
+
+.btn h2:hover{ /*Agregue Hover - By Immer*/
+  background-color: var(--first-color);
+  color: var(--container-color);
+}
+
 .btn p{
   font-size: 12px;
   color: var(--text-color);
@@ -481,7 +488,13 @@ body.dark{
   top: -1rem;
   right: 1rem;
   border: none;
-  box-shadow: 0 0 15px 0;
+  box-shadow: 0 0 15px 0; 
+  cursor: pointer; /*Agregando la manito - By Immer*/
+}
+
+.btn-agrega:hover{ /*Agregando hover - By Immer*/
+  background-color: var(--first-color);
+  color: var(--container-color);
 }
 
 .precio-stock{
