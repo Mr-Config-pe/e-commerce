@@ -512,18 +512,18 @@ body.dark{
   width: 100%;
   height: 100%;
   max-width: 400px;
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   padding: 2rem 1rem;
   z-index: 100;
   box-shadow: 0 0 15px 0;
-  animation: cart-move 1.5s;
+  animation: cart-open 1.5s;
   overflow-y: scroll;             /* --- le agregue este scroll para que se puedan listar mas de 3 items en el carrito ----*/
 }
 
-@keyframes cart-move{
+@keyframes cart-open{      /*Este keyframe es para mostrar el carrito*/
   0%{
       right: -400px;
   }
@@ -532,12 +532,21 @@ body.dark{
   }
 }
 
+@keyframes cart-close{      /*Este keyframe es para cerrar el carrito*/
+  0%{
+      right: 0px;
+  }
+  100%{
+      top: -700px;
+  }
+}
+
 .contenedor-carrito h2{
   text-align: center;
 }
 
 .contenedor-carrito p{
-  text-align: justify;
+  text-align: center;
   font-size: 14px;
 }
 
@@ -905,6 +914,7 @@ body.dark{
   width:calc(100% - 70px - 0.8rem);
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   gap: 0.8rem;
 
 }
@@ -929,6 +939,8 @@ body.dark{
 }
 .minus-icon, .plus-icon{
   box-shadow: 0 0 2px 0 var(--text-color-light);
+  display: flex;
+  align-items: center;
 }
 .trash-icon{
   color: var(--first-color);
