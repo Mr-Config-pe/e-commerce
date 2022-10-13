@@ -168,6 +168,22 @@ body.dark{
   padding-right: 15px;
 }
 
+.c-btn-nav1{
+  color: var(--button-color);
+}
+
+.c-btn-nav1:hover{
+  background-color: rgba(109, 108, 108, 0.6);
+  color: white;
+  cursor: pointer;
+}
+
+.c-btn-nav2:hover{
+  background-color: var(--first-color);
+  color: var(--container-color);
+  cursor: pointer;
+}
+
 /* ----- INICIO CODE MENU-RIGHT -----*/
 
 .container-navright{
@@ -359,6 +375,13 @@ body.dark{
   background-color: rgb(205, 204, 204);
   font-size: 16px;
   opacity: 80%;
+  color: var(--button-color);
+}
+
+.c-btn-header1:hover{
+  background-color: rgba(109, 108, 108, 0.6);
+  color: white;
+  cursor: pointer;
 }
 
 .c-btn-header2{
@@ -372,6 +395,14 @@ body.dark{
   font-weight: bold;
   font-size: 16px;
 }
+
+.c-btn-header2:hover{
+  background-color: var(--first-color);
+  color: var(--container-color);
+  cursor: pointer;
+}
+
+
 
 /* -------------------- FIN CODE BY MR-CONFIG ------------------- */
 
@@ -716,7 +747,6 @@ body.dark{
     height: 50px;
     border: 0;
     font-weight: 700;
-    background-color: rgb(205, 204, 204);
     font-size: 16px;
     opacity: 80%;
   }
@@ -813,7 +843,7 @@ body.dark{
     .h1-nav{
       grid-area: nav-header1;
       font-size: 48px;
-      padding-top: 95px;
+      padding-top: 63px;
       padding-bottom: 10px;
       color: var(--title-color);
     }
