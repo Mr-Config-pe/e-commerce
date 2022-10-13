@@ -350,6 +350,7 @@ function borraProducto() {
       //Borramos el item del carrito
       carritoArreglo.splice(indexProductoEnCarrito, 1)
       //Actualizamos el carrito, el pie del carrito y la parte principal
+      actualizaBagCounter()
       listaCarrito()
       actualizaPieCarrito()
       listarProductos(items)
