@@ -134,9 +134,11 @@ const carritoMenu = document.getElementById('carrito')
 const cierraCarrito = document.getElementById('close')
 
 cartIcon.addEventListener('click', () => {
-  carritoMenu.classList.remove('hidden');
+  carritoMenu.style.animation = 'cart-open 1.5s'
+  carritoMenu.style.display = 'flex'
   cierraCarrito.addEventListener('click', () => {
-    carritoMenu.classList.add('hidden')
+    carritoMenu.style.animation = 'cart-close 1.5s'
+    setTimeout(() => carritoMenu.style.display = 'none', 1400)
   })
 })
 /* ---------- FIN ABRE Y CIERRA CARRITO ---------- */
@@ -256,7 +258,7 @@ function listaItemsCarrito(){
               <i class='bx bx-minus minus-icon' name="${element.id}"></i>
               <p> ${element.cantidad} units</p>
               <i class='bx bx-plus plus-icon' name="${element.id}"></i>
-              <i class='bx bx-trash-alt trash-icon" '></i>
+              <i class='bx bx-trash-alt trash-icon' name="${element.id}"></i>
             </div>
           </div>
           </div>`           // el atributo name es el que hereda el id del producto, se da en los fragmentos de código
@@ -265,6 +267,7 @@ function listaItemsCarrito(){
   actualizaPieCarrito()         // Actualiza el Pie de carrito, para el total a pagar
   plusButtonFunction()          // Inicializa el boton de suma (en el carrito)
   minusButtonFunction()         // Inicializa el boton de resta (en el carrito)
+  borraProducto()
 }
 
 
@@ -328,6 +331,43 @@ function restaCarrito(idProducto) {
       }
 }
 /* ---------- FIN FUNCIONALIDADES EN EL CARRITO (SUMA/RESTA/TOTAL/ACTUALIZA) LAUTHER 4.0 ---------- */
+
+function borraProducto() {
+  const trashButton = document.getElementsByClassName('trash-icon')
+  for (const element of trashButton) {
+    element.addEventListener('click', () => {
+      const idTrashButtom = parseInt(element.getAttribute('name'))
+      //Buscamos todas las variables que necesitamos
+      let productoSeleccionado = carritoArreglo.find( item => item.id === idTrashButtom)
+      const indexproductoSeleccionado= items.indexOf(productoSeleccionado)
+      let indexProductoEnCarrito = carritoArreglo.indexOf(productoSeleccionado)
+      let quantityEnItems = items[indexproductoSeleccionado].quantity
+      let cantidadEnCarrito = carritoArreglo[indexProductoEnCarrito].cantidad
+      //Actualizamos la cantidad en el array principal
+      items[indexproductoSeleccionado].quantity = quantityEnItems + cantidadEnCarrito
+      //Borramos el item del carrito
+      carritoArreglo.splice(indexProductoEnCarrito, 1)
+      //Actualizamos el carrito, el pie del carrito y la parte principal
+      listaCarrito()
+      actualizaPieCarrito()
+      listarProductos(items)
+    })
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 }) /* FIN DEL DomContentLoader - NO ELIMINAR!!!*/
