@@ -10,6 +10,7 @@
   margin: 0;
   box-sizing: border-box;
   text-decoration: none;
+  list-style: none;
 }
 
 html{
@@ -220,6 +221,10 @@ body.dark{
   .name-logo{
     font-weight: bold;
     color: var(--title-color);
+  }
+
+  .menu-barnavrow{
+    display: none;
   }
   
 /* ----- FIN CODE MENU-RIGHT -----*/
@@ -618,11 +623,39 @@ body.dark{
 
   .bar-nav1{
     padding-left: 60px;
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
   }
 
   .bar-nav2{
     padding-right: 80px;
   }
+
+  .menu-barnavrow{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+.barnavrow1{
+  color: var(--fir-color);
+}
+
+.barnavrow1:hover{
+  color: var(--first-color);
+}
+
+.barnavrow2{
+  color: var(--title-color);
+}
+  
+.barnavrow2:hover{
+  color: var(--first-color);
+}
 
   /* ---------- NAV-HEADER GRID ---------- */
 
