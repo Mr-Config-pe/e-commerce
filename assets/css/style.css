@@ -13,6 +13,8 @@
   list-style: none;
 }
 
+/* -----------------------------------------*/
+
 html{
   height: 100%;
   font-family:var(--body-font);
@@ -56,6 +58,7 @@ body{
 }
 
 /* ---------- MODO DARK ---------- */
+
 body.dark{
   --first-color: hsl(182, 53%, 74%);
   --button-color: hsl(246, 16%, 12%);
@@ -72,11 +75,13 @@ body.dark{
   /*background-color: black; FONDO PRINCIPAL CONTENEDOR NAV-1*/
   grid-area: nav;
   height: 350px;
+ 
 }
 
 .header{
   /*background-color: coral; FONDO PRINCIPAL CONTENEDOR HEADER-1*/
   grid-area: header;
+  
 }
 
 .section{
@@ -85,7 +90,7 @@ body.dark{
 }
 
 .footer{
-  background-color: blue;
+  /*background-color: blue; FONDO PRINCIPAL CONTENEDOR FOOTER*/
   grid-area: footer;
 }
 
@@ -405,8 +410,8 @@ body.dark{
 }
 
 
-
 /* -------------------- FIN CODE BY MR-CONFIG ------------------- */
+
 
 /* ---------- INICIO CODE CSS LAUTHER 1 ---------- */
 
@@ -660,12 +665,20 @@ body.dark{
   
   /* ---------- BARRA DE NAVEGACION GRID ----------*/
   .nav {
+
       margin-bottom: -150px;
       padding: 0px 60px;
       display: grid;
       grid-template-areas:
-      'bar-nav bar-nav'
-      'nav-header contenedor-nav';
+      'bar-nav'
+      'contenedor-navheader'
+      ; 
+  }
+
+  .contenedor-navheader{ /* CONTENEDOR NAV - HEADER AGREGADO*/
+    display: grid;
+    grid-template-areas:
+    'nav-header contenedor-nav';
   }
 
   .contenedor-nav{
@@ -705,7 +718,7 @@ body.dark{
   }
 
 .barnavrow1{
-  color: var(--fir-color);
+  color: var(--first-color);
 }
 
 .barnavrow1:hover{
@@ -863,6 +876,7 @@ body.dark{
       padding-right: 100px;
       gap: 2rem;
     }
+
     .h1-nav{
       grid-area: nav-header1;
       font-size: 48px;
@@ -1010,4 +1024,31 @@ body.dark{
 
 /* ----------- FIN CAMBIOS LAUTHER 2.0 ------------*/
 
+@media (min-width: 1200px){
 
+/* ----------INICIO CODE BY MR-CONFIG ---------- */
+
+nav{
+
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bar-nav{
+  grid-area: bar-nav;
+  width: 1200px;/*Era 100% prueba*/
+  position: fixed;
+  top: 50;
+  left: 50%;
+  height: 80px;
+  display: grid;
+  justify-items: stretch;
+  margin-top: 0px;
+  margin-left: -600px;
+}
+/* ---------- FIN CODE MR-CONFIG ----------*/
+
+
+
+} /* <--- NO BORRAR ESTE CODIGO*/

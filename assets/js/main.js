@@ -1,6 +1,3 @@
-
-/* ----------INICIO CODE BY IMMER ---------- */
-
 /* INICIO DEL DomContentLoader - NO ELIMINAR!! */
 document.addEventListener("DOMContentLoaded", () => {
   
@@ -35,7 +32,7 @@ document.addEventListener("DomContentLoader", loadpage())
 
 /*----- FIN INTRO ACADEMLO -----*/
 
-/* ----- INICIO CODE MODO DARK ----- */
+/* ----- INICIO MODO DARK ----- */
 
     /* Inicio Variables */
     const themeIcon = document.getElementById("btn-moon-nav")
@@ -53,7 +50,7 @@ document.addEventListener("DomContentLoader", loadpage())
 
       })
 
-/* ----- FIN CODE MODO DARK ----- */
+/* ----- FIN MODO DARK ----- */
 
 /* ----- INICIO FONDO BAR-NAV----- */
 
