@@ -58,8 +58,30 @@ window.addEventListener("scroll", function(){
   var fondoNav0 = document.getElementById("bar-nav-scroll");
   fondoNav0.classList.toggle("bar-nav-white", window.scrollY>0)
 })
-      
+
 /* ----- FIN CODE FONDO BAR-NAV----- */
+
+/* SELECCION NAV*/
+
+const clickNavColor = document.getElementById("barnavrow1")
+const clickNavColor1 = document.getElementById("barnavrow2")
+
+clickNavColor.addEventListener("click", () => {
+
+  
+  clickNavColor.classList.replace("barnavrow1", "barnavrow1-mix")
+  clickNavColor1.classList.replace("barnavrow2-mix", "barnavrow2")
+
+})
+
+clickNavColor1.addEventListener("click", () => {
+
+  clickNavColor1.classList.replace("barnavrow2", "barnavrow2-mix")
+  clickNavColor.classList.replace("barnavrow1-mix", "barnavrow1")
+
+})
+
+/* SELECCION NAV*/
 
 /* ----------FIN CODE BY IMMER ---------- */
 

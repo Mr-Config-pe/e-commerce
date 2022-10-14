@@ -718,20 +718,22 @@ body.dark{
   }
 
 .barnavrow1{
+  color: var(--tittle-color);
+}
+
+.barnavrow1-mix{
   color: var(--first-color);
 }
 
-.barnavrow1:hover{
-  color: var(--first-color);
-}
 
 .barnavrow2{
   color: var(--title-color);
 }
-  
-.barnavrow2:hover{
+
+.barnavrow2-mix{
   color: var(--first-color);
 }
+  
 
 .menu-navright{
   display: none;
