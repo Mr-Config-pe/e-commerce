@@ -14,8 +14,8 @@ const containerRight = document.getElementById("container-navright")
 
 bagIcon.addEventListener("click", () => {
 
-  menuRight.classList.toggle("hide-menuright")
-  containerRight.classList.toggle("hide-menuright")
+  menuRight.classList.toggle("hide-menuright");
+  containerRight.classList.toggle("hide-menuright");
   
 })
 
