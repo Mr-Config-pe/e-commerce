@@ -257,7 +257,7 @@ body.dark{
 
 /* ---------- NAV GRID POSITION -----------*/
 
-.bar-nav{
+.bar-nav, #bar-nav-scroll{
   grid-area: bar-nav;
   width: 100%;
   position: fixed;
@@ -274,7 +274,7 @@ body.dark{
 }
 
 .bar-nav-white{ /*Fondo bar-nav*/
-  background-color: var(--body-color);
+  background-color: var(--container-color);
 }
 
 #cart-icon{
@@ -460,6 +460,7 @@ body.dark{
   padding-bottom: 3rem;
   gap: 3rem;
 }
+
 .tarjeta-producto{
   background-color: var(--card-color);
   width: 250px;
@@ -1018,10 +1019,12 @@ body.dark{
   box-shadow: 0 0 2px 0 var(--text-color-light);
   display: flex;
   align-items: center;
+  cursor: pointer; /*Agregado By Immer*/
 }
 .trash-icon{
   color: var(--first-color);
   margin-left: 3rem;
+  cursor: pointer; /*Agregado By Immer*/
 }
 
 /* ----------- FIN CAMBIOS LAUTHER 2.0 ------------*/
@@ -1048,6 +1051,7 @@ nav{
   justify-items: stretch;
   margin-top: 0px;
   margin-left: -600px;
+  
 }
 /* ---------- FIN CODE MR-CONFIG ----------*/
 
