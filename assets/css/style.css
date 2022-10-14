@@ -194,6 +194,7 @@ body.dark{
   top: 0;
   left: 0;
   display: none;
+  z-index: 100;
   }
   
   .menu-navright{
@@ -203,8 +204,8 @@ body.dark{
   position: absolute;
   top: 0;
   right: 0;
-  box-shadow: -4px 5px 10px rgb(147, 147, 147);
-  max-width: 400px;
+  /*box-shadow: -4px 5px 10px rgb(147, 147, 147);*/
+  max-width: 100%;
   display: none;
   }
 
@@ -294,7 +295,7 @@ body.dark{
 #btn-moon-nav{
     cursor: pointer;
     color: var(--title-color);
-    z-index: 100;
+    z-index: 99;
 }
 
 #bt-grid-nav{
@@ -302,6 +303,7 @@ body.dark{
     color: var(--title-color);
     z-index: 100;
 }
+
 
 .nav-header{
     grid-area: nav-header;
@@ -716,6 +718,14 @@ body.dark{
   
 .barnavrow2:hover{
   color: var(--first-color);
+}
+
+.menu-navright{
+  display: none;
+}
+
+.container-navright{
+  z-index: 0;
 }
 
   /* ---------- NAV-HEADER GRID ---------- */
